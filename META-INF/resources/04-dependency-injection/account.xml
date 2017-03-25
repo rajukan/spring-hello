@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+     
+     <bean id="institutional" class="com.vg.dependencyinjection.Investor">
+     	<constructor-arg ref="accnt"></constructor-arg>
+     </bean>
+      
+      <bean id="accnt" class="com.vg.dependencyinjection.BrokerageAccount"></bean>
+      
+      <bean id="ira" class="com.vg.dependencyinjection.TradionalAccount"></bean>
+</beans>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<bean id="fund" class="com.vg.fund.fundtype.NewYorkTaxFund">
+        <property name="shareType" ref="admiralShare" />
+     </bean>
+     
+      <bean id="admiralShare" class="com.vg.fund.share.AdmiralShare" /> 
+      
+</beans>
